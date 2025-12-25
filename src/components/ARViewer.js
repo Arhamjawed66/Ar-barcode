@@ -16,13 +16,16 @@ function ARSceneContent({ modelUrl }) {
     const [modelData, setModelData] = useState(null);
     const { session } = useXR();
 
-    useXRHitTest((hitMatrix) => {
-        if (reticleRef.current) {
+    useXRHitTest((hitMatrix, hit) => {
+        // Only update if we have a valid hit and reticle ref
+        if (hitMatrix && reticleRef.current) {
             hitMatrix.decompose(
                 reticleRef.current.position,
                 reticleRef.current.quaternion,
                 reticleRef.current.scale
             );
+
+            // Force reticle flat on surface
             reticleRef.current.rotation.set(-Math.PI / 2, 0, 0);
         }
     });
