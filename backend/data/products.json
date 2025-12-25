@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Modern Chair",
+        "description": "A stylish modern chair for your living room. Comfortable and durable.",
+        "price": 49.99,
+        "barcode": "123456789",
+        "modelUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/SheenChair/glTF-Binary/SheenChair.glb",
+        "imageUrl": "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/SheenChair/screenshot/screenshot.png"
+    },
+    {
+        "name": "Vintage Camera",
+        "description": "A classic vintage camera model. Perfect for collectors.",
+        "price": 129.50,
+        "barcode": "987654321",
+        "modelUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AntiqueCamera/glTF-Binary/AntiqueCamera.glb",
+        "imageUrl": "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/AntiqueCamera/screenshot/screenshot.png"
+    }
+]
